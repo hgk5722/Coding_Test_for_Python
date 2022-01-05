@@ -1,3 +1,5 @@
+# m의 크기가 100억 이상이 되면 시간 초과 판정이 나오기 때문에 공식을 이용한 풀이가 필요함
+
 n, m, k = map(int, input().split())
 data = list(map(int, input().split()))
 
