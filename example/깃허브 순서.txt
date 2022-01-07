@@ -1,7 +1,27 @@
 순서
-1. add
-git add *
-2. commit
-git commit -m "메시지"
-3. push
-git push
+1. 초기화 
+git init
+2. git config --global user.name "본인의 닉네임"
+3. git config --global user.email "본인의 이메일"
+현재 상태 확인
+    git status
+
+깃허브랑 연동하기
+1. git init (했다면 생략)
+2. 원격 저장소 생성(로컬저장소와 원격저장소 연동)
+    git remote add origin "주소"
+
+3. 원격 저장소에 로컬 저장소 내용 집어넣기
+    git push -u origin master (-u 옵션 처음 한번만)
+
+
+수정 후 
+1. add (스테이징)
+    git add *
+    (*은 모든 내용을 포함한다는 의미)
+2. commit (커밋)
+    git commit -m "메시지"
+3. push (푸시)
+    git push 또는 git push origin master
+
+# 후에 더 추가
