@@ -18,3 +18,6 @@ for step in steps:
         result += 1
 
 print(result)
+
+
+# 6074(코드업) col (5행) 이해를 위해 알아야하는 문제
