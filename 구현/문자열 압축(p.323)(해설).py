@@ -1,3 +1,4 @@
+# 프로그래머스 2020 카카오 문제
 def solution(s):
     answer = len(s)
     # 1개 단위(step)부터 압축 단위를 늘려가며 확인
@@ -20,3 +21,4 @@ def solution(s):
         # 만들어지는 압축 문자열이 가장 짧은 것이 정답
         answer = min(answer, len(compressed))
     return answer
+
