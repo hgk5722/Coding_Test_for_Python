@@ -39,7 +39,7 @@ def dfs(count):
         for i in range(n):
             for j in range(m):
                 temp[i][j] = graph[i][j]
-        # 각 바이러스의 위치에서 전파 진행
+        # 각 바이러스의 위치에서 전파 진행  
         for i in range(n):
             for j in range(m):
                 if temp[i][j] == 2:
