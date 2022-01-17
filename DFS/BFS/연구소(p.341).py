@@ -56,6 +56,6 @@ def dfs(count):
                 dfs(count)
                 graph[i][j] = 0
                 count -= 1
-
+# dfs는 스택의 개념을 이용 (완전탐색)
 dfs(0)
 print(result) 
