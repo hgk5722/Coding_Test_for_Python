@@ -45,6 +45,7 @@ total_count = 0
 
 # 더 이상 인구 이동을 할 수 없을 때까지 반복
 while True:
+    # 같은 index번호를 가진 요소끼리 같은 연합임을 표시하기 위한 리스트 
     union = [ [-1] * n for _ in range(n) ] 
     index = 0
     for i in range(n):
@@ -53,7 +54,7 @@ while True:
                 process(i, j, index)
                 index += 1 
     # 모든 인구 이동이 끝난 경우
-    if index == n * n: # 한번 더 돌아서 umion[x][y]의 요소에 index가 0부터 n-1까지 차례대로 들어갈때
+    if index == n * n: # 한번 더 돌아서 union[x][y]의 요소에 index가 0부터 n-1까지 차례대로 들어갈때
             break # index가 n이 되서 break 
     total_count += 1
 
