@@ -53,8 +53,8 @@ while True:
                 process(i, j, index)
                 index += 1 
     # 모든 인구 이동이 끝난 경우
-    if index == n * n:
-            break
+    if index == n * n: # 한번 더 돌아서 umion[x][y]의 요소에 index가 0부터 n-1까지 차례대로 들어갈때
+            break # index가 n이 되서 break 
     total_count += 1
 
 # 인구 이동 횟수 출력
