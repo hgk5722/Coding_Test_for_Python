@@ -54,9 +54,9 @@ def process():
     for x, y in teachers:
         # 4가지 방향으로 학생을 감지할 수 있는지 확인 [ 좌, 우, 상, 하 ]
         for i in range(4):
-            if watch(x, y, i):
+            if watch(x, y, i): # 리턴값이 True이면 찾은것 
                 return True
-        return False
+    return False # 네 방향 모두 못 찾으면 False (원하는 것) 
 
 find = False # 학생이 한 명도 감지되지 않도록 설치할 수 있는지의 여부 
 
@@ -64,9 +64,9 @@ find = False # 학생이 한 명도 감지되지 않도록 설치할 수 있는�
 for data in combinations(spaces, 3):
     # 장애물 설치해보기 
     for x, y in data:
-        board[x][y] = 'O'
+        board[x][y] = 'O' 
     # 학생이 한 명도 감지되지 않는 경우
-    if not process():
+    if not process(): 
         # 원하는 경우를 발견한 것임
         find = True
         break
@@ -75,6 +75,6 @@ for data in combinations(spaces, 3):
         board[x][y] = 'X'
 
 if find:
-    print('YES')
+    print('YES') 
 else:
     print('NO') 
