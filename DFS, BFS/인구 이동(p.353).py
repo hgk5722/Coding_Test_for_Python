@@ -37,6 +37,7 @@ def process(x, y, index):
                     summary += graph[nx][ny] 
                     count += 1 # 연합의 국가 수 증가 
                     united.append((nx, ny)) 
+    # 같은 인덱스를 받은 
     for i, j in united:
         graph[i][j] = summary // count 
     return count 
