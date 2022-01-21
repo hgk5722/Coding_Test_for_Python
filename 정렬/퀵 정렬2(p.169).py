@@ -17,4 +17,4 @@ def quick_sort(array):
     # 분할 이후 왼쪽 부분과 오른쪽 부분에서 각각 정렬을 수해하고, 전체 리스트를 반환
     return quick_sort(left_side) + [pivot] + quick_sort(right_side) 
 
-print(quick_sort(array)) # O(nlogn)의 복잡도를 가진다.
+print(quick_sort(array)) # O(nlogn)의 복잡도를 가진다. 
