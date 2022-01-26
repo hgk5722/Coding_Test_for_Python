@@ -25,3 +25,6 @@ for i in x:
         print('no', end= ' ') 
     else:
         print('yes', end= ' ') 
+
+# N개의 정렬된 부품에서 M개를 찾을 때 O(MlogN) 약 200만
+# 그래서 시간 복잡도는 O((M + N)logN) 
