@@ -20,7 +20,9 @@ while start <= end:
             value = array[i] # 현재위치에 공유기 설치
             count += 1 # 공유기 대수 증가 
     if count >= c: # C개 이상의 공유기를 설치할 수 있는 경우, 거리를 증가
-        start = mid + 1
+        # 문제조건 : 인접한 공유기의 최대거리를 구해야 함 -> c개 이상 설치 가능(아직은 최적값이 아님) ->
+        # -> start값을 늘리면 mid(gap)값 증가 -> 반복하면서 최적gap 구할 수 있음 
+        start = mid + 1 
         result = mid # 적어도 C개 이상 설치해야 하니까 그 당시 최적의 값 저장 
     else: # C개 이상의 공유기를 설치할 수 없는 경우, 거리를 감소 
         end = mid - 1
