@@ -1,6 +1,3 @@
-from re import X
-
-
 n = int(input()) 
 array = list(map(int, input().split())) 
 # 순서를 뒤집어 '가장 긴 증가하는 부분 수열' 문제로 변환 
