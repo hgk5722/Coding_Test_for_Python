@@ -8,8 +8,7 @@ for x in data:
 result = 0
 
 for i in range(1, m+1):
-    n -= array[i] # 무게가 i인 볼링공의 개수(A가 선택할 수 있는 개수) 제외
-    # 여기서 n은 B가 선택하는 경우가 됨
-    result += array[i] * n # B가 선택하는 경우의 수와 곱하기
+    n -= array[i] # 특정 무게를 가진 볼링공의 개수 전체에서 빼서 전체개수 갱신
+    result += array[i] * n # 갱신된 전체 개수는 array[i] 무게를 가진 볼링공을 고를때 남은 경우의 수 
 print(result)
 
