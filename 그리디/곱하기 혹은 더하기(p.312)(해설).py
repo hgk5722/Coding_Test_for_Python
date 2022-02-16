@@ -1,11 +1,9 @@
-data = list(map(int, input()))
-
-data.sort()
+data = input()
 # 첫 리스트를 결과값으로 설정!!
-result = data[0]
+result = int(data[0])
 
 for i in range(1, len(data)):
-    num = data[i] # 인덱스가 아닌 리스트의 값
+    num = int(data[i]) # 인덱스가 아닌 리스트의 값
     if result <= 1 or num <= 1:
         result += num
     else:
