@@ -42,9 +42,9 @@ while True:
         if wall[nx][ny] == 0:
             x = nx
             y = ny
-        else:
+        else: # 후진 실패시 반복문 탈출(종료) 
             break
-        turn_time = 0
+        turn_time = 0 # 후진에 성공한 뒤 회전 수 초기화 
 print(count)
 
 # turn_left는 내가 구현
