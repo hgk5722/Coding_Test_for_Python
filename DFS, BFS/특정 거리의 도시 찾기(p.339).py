@@ -21,7 +21,8 @@ while queue:
     # 현재 도시에서 이동할 수 있는 모든 도시를 확인
     for next_node in graph[now]:
         # 아직 방문하지 않은 도시라면
-        if distance[next_node] == -1:
+        # bfs는 너비 우선 탐색이라 가까운것부터 탐색 따라서 처음에 방문이 최단거리를 보장
+        if distance[next_node] == -1: 
             # 최단 거리 갱신
             distance[next_node] = distance[now] + 1
             queue.append(next_node) 
