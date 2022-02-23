@@ -28,7 +28,7 @@ def dfs(i, now):
       mul += 1
     if div > 0:
       div -= 1
-      dfs(i + 1, now / data[i])
+      dfs(i + 1, int(now / data[i])) # 음수 나눗셈에서 양수와 같은 값을(부호만 다른) 얻기 위해
       div += 1
 
 # 처음 노드 스택에 넣고 방문 처리 
