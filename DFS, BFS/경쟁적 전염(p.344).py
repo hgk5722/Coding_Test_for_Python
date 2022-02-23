@@ -13,7 +13,7 @@ for i in range(n):
         if graph[i][j] != 0:
             data.append((graph[i][j], 0, i, j)) # 튜플로 입력 
 
-data.sort()
+data.sort() # 숫자가 낮은 바이러스부터 퍼지게 하기 위해 큐에 넣기전에 정렬
 queue = deque(data) # 탐색 시작 노드 큐에 넣기
 
 target_s, target_x, target_y = map(int, input().split()) 
