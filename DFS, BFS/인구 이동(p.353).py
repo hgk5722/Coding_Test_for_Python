@@ -8,8 +8,6 @@ for i in range(n):
 dx = [ -1, 0, 1, 0 ]
 dy = [ 0, 1, 0, -1 ]
 
-result = 0
-
 def process(x, y, index):
     # x, y의 위치와 연결된 나라(연합) 정보를 담는 리스트 
     united = []
@@ -40,7 +38,6 @@ def process(x, y, index):
     # 같은 인덱스를 받은 
     for i, j in united:
         graph[i][j] = summary // count 
-    return count 
 
 total_count = 0
 
@@ -55,8 +52,8 @@ while True:
                 process(i, j, index)
                 index += 1 
     # 모든 인구 이동이 끝난 경우
-    if index == n * n: # 한번 더 돌아서 union[x][y]의 요소에 index가 0부터 n-1까지 차례대로 들어갈때
-            break # index가 n이 되서 break 
+    if index == n * n: # 한번 더 돌아서 union[x][y]의 요소에 index가 0부터 (n^2)-1까지 차례대로 들어갈때
+            break # index가 n^2이 되서 break 
     total_count += 1
 
 # 인구 이동 횟수 출력
