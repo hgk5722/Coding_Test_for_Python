@@ -3,10 +3,11 @@ x, y, direction = map(int, input().split())
 
 # 맵 깔기
 graph = [ [0] * m for _ in range(n) ] 
-graph[x][y] = 1 # 시작 노드 방문처리 
-
+ 
 dx = [ -1, 0, 1, 0 ] # 북, 남 
 dy = [ 0, 1, 0, -1 ] # 동, 서 
+
+graph[x][y] = 1 # 시작 노드 방문처리
 count = 1 # 방문처리 했으니 1로 시작  
 turn_time = 0 
 
