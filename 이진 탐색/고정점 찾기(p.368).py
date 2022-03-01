@@ -24,3 +24,8 @@ if index == None:
 # 아닌 경우 해당 인덱스 출력
 else: 
     print(index) 
+
+# start와 end를 무엇으로 설정할 것인가? -> 이 문제에선 인덱스 -> 구하고자 하는것이 인덱스 
+# 위치값과 일치하는 인덱스를 찾는것이 목표 -> 인덱스를 mid라 표현 (target) 
+# 위치값이 여기선 가운데값이다 array[mid] (mid) 
+# 가운데값(array[mid])보다 mid(target)이 더 크면 start = mid + 1 
