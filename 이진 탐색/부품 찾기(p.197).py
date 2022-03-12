@@ -1,3 +1,5 @@
+import sys
+
 def binary_search(array, target, start, end):
     while start <= end:
         mid = (start + end) // 2
@@ -12,12 +14,12 @@ def binary_search(array, target, start, end):
             start = mid + 1
     return None # if에서 리턴하지 못하고 여기까지 오면 None 반환 
 
-n = int(input()) 
-array = list(map(int, input().split())) 
+n = int(sys.stdin.readline()) 
+array = list(map(int, sys.stdin.readline().split())) 
 array.sort() 
 
-m = int(input()) 
-x = list(map(int, input().split())) 
+m = int(sys.stdin.readline()) 
+x = list(map(int, sys.stdin.readline().split())) 
 
 for i in x:
     result = binary_search(array, i, 0, n - 1) 
