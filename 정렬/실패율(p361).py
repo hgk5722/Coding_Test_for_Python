@@ -8,7 +8,7 @@ def solution(N, stages):
         count = stages.count(number)
         
         # 실패율 계산
-        if length == 0: # N = 0, stages가 None인 경우를 위해서 
+        if length == 0: # N = 1, stages가 None인 경우를 위해서 
             fail = 0
         else:
             fail = count / length # 정수 나누기 연산으로 하면 모두 0이 나오기 때문에
