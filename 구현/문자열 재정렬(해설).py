@@ -10,7 +10,8 @@ for i in data:
         sum += int(i)
 # 추가된 리스트들을 오름차순으로 정리
 result.sort()
-# 모두 더한 값을 리스트 맨뒤에 삽입
+# sum != 0인 이유는 문자열 data에 숫자가 하나도 없을 경우 sum = 0이 되므로
+# 0을 뒤에 붙힐 수는 없어서.
 if sum != 0:
     result.append(str(sum))
 # 리스트를 공백없이 문자열로 변환해서 출력
