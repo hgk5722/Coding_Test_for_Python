@@ -32,7 +32,7 @@ while queue:
 check = False
 for i in range(1, n + 1):
     if distance[i] == k:
-        print(i)
+        print(i) # 한 줄에 하나씩 오름차순으로 출력해야 하니까
         check = True
 # 만약 최단 거리가 k인 도시가 없다면, -1 출력
 if check == False:
