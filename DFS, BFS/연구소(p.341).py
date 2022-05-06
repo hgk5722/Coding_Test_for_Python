@@ -2,7 +2,7 @@ n, m = map(int, input().split())
 # 초기 맵 리스트
 graph = [ [] * m for _ in range(n) ]
 # 벽을 설치한 뒤의 맵 리스트
-temp = [ [0] *m for _ in range(n) ]
+temp = [ [0] *m for _ in range(n) ] # 0안 넣어주면 인덱스 에러 발생.
 
 for i in range(n):
     graph[i] = list(map(int, input().split()))
