@@ -32,7 +32,7 @@ def get_score():
     return score 
 
 # dfs를 이용해 울타리를 설치하면서 안전영역의 크기 계산
-def dfs(count):
+def dfs(count): # count = 0 이때 선언
     global result
     # 울타리가 3개 설치된 경우
     if count == 3:
