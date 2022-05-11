@@ -17,3 +17,30 @@ while True:
   
 result += (n - 1) # 추가했던 n을 빼주면 정답이 된다. 
 print(result) 
+
+""" 
+17 4
+target = 17 // 4 ) * 4 = 16
+result += 17 -16 = 1
+
+n = 16
+
+result += 1 = 2
+n //= k = 4
+
+target = 4
+
+result += 0 = 2
+
+result += 1 = 3
+4 //= 4 = n = 1
+
+target = 0 * 4 = 0
+result += (1-0) = 4
+n = target = 0
+
+if 0 < 4:
+break
+
+result += ( 0-1) = 3
+print(result) = 3 """
