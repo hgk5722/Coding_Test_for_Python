@@ -23,10 +23,10 @@ def turn_left():
             direction = d[i-1]
 
 while True:
-    turn_left() # direction 변경 
+    turn_left() # direction 변경 # 1번 조건 구현
     nx = x + dx[direction] 
     ny = y + dy[direction] 
-    if graph[nx][ny] == 0: 
+    if graph[nx][ny] == 0: # if ~ else문으로 2번 조건 구현
         graph[nx][ny] = 1 # 방문처리 
         x, y = nx, ny
         count += 1
@@ -34,7 +34,7 @@ while True:
         continue # 4번 회전할 수도 있기 때문에 continue
     else:
         turn_time += 1
-    if turn_time == 4:
+    if turn_time == 4: # 여기서부터 3번 조건을 구현
         nx = x - dx[direction]
         ny = y - dy[direction]
         if graph[nx][ny] == 0:
