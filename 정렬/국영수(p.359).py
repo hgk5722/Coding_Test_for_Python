@@ -2,7 +2,8 @@ import sys
 n = int(input()) 
 students = []
 for i in range(n):
-    students.append(sys.stdin.readline().split()) 
+    a, b, c, d = list(sys.stdin.readline().split())
+    students.append([a, b, c, d])
 
 """ [정렬 기준] 
 1) 두 번째 원소를 기준으로 내림차순 정렬
