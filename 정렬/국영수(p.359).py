@@ -17,3 +17,25 @@ students.sort(key = lambda x : ( -int(x[1]), int(x[2]), -int(x[3]), x[0] )) # �
 # 정렬된 학생 정보에서 이름만 출력
 for student in students:
     print(student[0]) 
+
+""" 정렬을 하지 않고 students 리스트를 출력하면.
+
+for student in students:
+    print(student)
+
+['Junkyu', '50', '60', '100']
+['Sangkeun', '80', '60', '50']
+['Sunyoung', '80', '70', '100']
+['Soong', '50', '60', '90']
+['Heabin', '50', '60', '100']
+['Kangsoo', '60', '80', '100']
+['Donghyuk', '80', '60', '100']
+['Sei', '70', '70', '70']
+['Wonseob', '70', '70', '90']
+['Sanghyun', '70', '70', '80']
+['nsj', '80', '80', '80']
+['Taewhan', '50', '60', '90']
+
+for i in range(n):
+    students.append(input().split())
+이렇게 입력을 받아도 리스트로 정렬이 알아서 됨. """
