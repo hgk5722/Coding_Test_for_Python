@@ -40,3 +40,16 @@ for student in students:
 for i in range(n):
     students.append(input().split())
 이렇게 입력을 받아도 리스트로 정렬이 알아서 됨. """
+
+
+
+""" example )
+a = [ [5, 1, 5], [3, 5, 5], [3, 1, 9], [3, 1, 1] ]
+
+a.sort(key= lambda x : ( x[1], x[0], x[2]) )
+print(a, end=" ")
+
+결과
+[[3, 1, 1], [3, 1, 9], [5, 1, 5], [3, 5, 5]] 
+
+* 이중 리스트로 이루어진 리스트를 정렬하려면 튜플을 사용해야 함. """
