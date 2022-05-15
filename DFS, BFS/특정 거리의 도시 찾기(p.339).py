@@ -3,7 +3,7 @@ from collections import deque
 n, m, k, x = map(int, input().split())
 
 # 그래프로 노드의 개수 정해줌
-graph = [ [] for _ in range(n + 1) ]
+graph = [ [] for _ in range(n + 1) ] # 1 ~ 4 범위로 세고 0이 없어서 +1 해줘야 함
 
 # 연결된 노드를 저장하는 방법
 for _ in range(m):
