@@ -26,4 +26,4 @@ while start <= end:
         result = mid # 적어도 C개 이상 설치해야 하니까 그 당시 최적의 값 저장 
     else: # C개 이상의 공유기를 설치할 수 없는 경우, 거리를 감소 
         end = mid - 1
-print(result) 
+print(result)
